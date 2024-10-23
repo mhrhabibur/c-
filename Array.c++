@@ -46,34 +46,78 @@ using namespace std;
 
 // };
 
+// int main(int argc, char const *argv[])
+// {
+//     int numbers[] = {23, 43, -2, 54, 12};
+//     int size = 5;
+// cout << sumOfArray(numbers, size) << endl;
+// smallestNumber(numbers, size);
+// swapMaxMinNumber(numbers, size);
+// for (int i = 0; i < size; i++)
+// {
+//    cout << numbers[i] << ", ";
+// }
+//     cout << "Original Array" << " \n";
+//     for (int i = 0; i < size; i++)
+//     {
+//         cout << numbers[i] << ", ";
+//     }
+// cout << "\nNew Array" << " \n";
+//     for (int i = 0; i < size; i++)
+//     {
+//         int j;
+//         for (j = 0; j < i; j++)
+//         {
+//             if (numbers[i] == numbers[j])
+//                 break;
+//         }
+//         if (i == j)
+//             cout << numbers[i] << " ";
+//     }
+//     cout << endl;
+//     return 0;
+// }
+
+
+
+// int main(int argc, char const *argv[])
+// {
+//     cout << "\n";
+//     int n = 4;
+//     int num = 1;
+//     for (int i = 1; i <= n; i++)
+//     {
+//         for (int j = 1; j <= i; j++)
+//         {
+//             cout << num << "  ";
+//             num++;
+//         }
+//         cout << "\n";
+//     }
+
+//     cout << "\n";
+//     return 0;
+// }
+
+
+int findnumber(int numbers[], int target)
+{
+    for (int i = 0; i < 6; i++)
+    {
+        if (numbers[i] == target)
+        {
+            return i;
+            break;
+        }
+    }
+     return -1;
+};
+
 int main(int argc, char const *argv[])
 {
-    int numbers[] = {1, 20, 3, 5, -2, 1, 3, 5};
-    int size = 8;
-    // cout << sumOfArray(numbers, size) << endl;
-    // smallestNumber(numbers, size);
-    // swapMaxMinNumber(numbers, size);
-    // for (int i = 0; i < size; i++)
-    // {
-    //    cout << numbers[i] << ", ";
-    // }
-    cout << "Original Array" << " \n";
-    for (int i = 0; i < size; i++)
-    {
-        cout << numbers[i] << ", ";
-    }
-cout << "\nNew Array" << " \n";
-    for (int i = 0; i < size; i++)
-    {
-        int j;
-        for (j = 0; j < i; j++)
-        {
-            if (numbers[i] == numbers[j])
-                break;
-        }
-        if (i == j)
-            cout << numbers[i] << " ";
-    }
-    cout << endl;
+    int nums [] = {-1,0,3,5,9,12};
+    int target = 9;
+    int result = findnumber(nums, target);
+    cout << result << endl;
     return 0;
 }

@@ -6,9 +6,18 @@
 //
 
 #include <iostream>
+using namespace std;
+
+// MARK:
+
+// write a function to print the intersection of two array
+
+void intersactionOfArray() {
+    
+}
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    std::cout << "Hello, World!\n";
+    cout << "Hello, World!\n";
     return 0;
 }
