@@ -1,14 +1,14 @@
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
 using namespace std;
 
-int main(int argc, char const *argv[])
+class Solution
 {
-    vector<int> numbers (5, 3);
-    for (int i = 0; i < sizeof(numbers) / sizeof(numbers[0]); i++)
+    int main(int argc, char const *argv[])
     {
-        cout << numbers[i] << endl;
+       int n = 4;
+       int ans = n^2;
+       cout << ans;
+        return 0;
     }
-    
-    return 0;
-}
+};
